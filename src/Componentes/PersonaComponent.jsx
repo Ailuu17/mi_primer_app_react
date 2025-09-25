@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 function Persona() {
     // useState devuelve un par de valores:
     // 1. El estado actual (nombre, apellido, email)
@@ -21,7 +22,7 @@ function Persona() {
   return (
     <div>
 
-
+    <h2>Formulario de Persona:</h2>
       <p>Nombre: {nombre}</p>
       <p>Apellido: {apellido}</p>
       <p>Edad: {edad}</p>
@@ -57,15 +58,14 @@ function Persona() {
 
       <button onClick={() => {
           agregarPersona();
-      }}>
-        Agregar persona
-      </button>
+      }}>Agregar persona</button>
 
 
       <h3>Lista personas:</h3>
       <ul>
         {personas.map((persona, index) => (
-          <li key={index}>{persona.nombre} {persona.apellido} - {persona.edad} años - {persona.email}</li>
+          <li key={index}>{persona.nombre} {persona.apellido} - 
+          {persona.edad} años - {persona.email}</li>
         ))}
       </ul>
 

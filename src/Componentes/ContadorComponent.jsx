@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 function Contador() {
     // useState devuelve un par de valores:
     // 1. El estado actual (contador)
